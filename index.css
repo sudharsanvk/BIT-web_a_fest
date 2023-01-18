@@ -1,0 +1,457 @@
+ nav{
+    width: 100%;
+ }
+
+.navbar-brand{
+    font-family: "Sofia";
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+.nav-link{
+    font-size: large !important;    
+    /* font-weight: 1000; */
+    font-weight: bolder;
+    font-family: "Trirong", sans-serif;
+}
+/* .navbar{
+    background-color: transparent;
+} */
+
+.nav-full{
+    width: 100%;
+}
+
+.collapse ul{
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    gap: 100px;
+}
+
+.carousel-item{
+    height: 90vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+     right: 60% !important;
+     left: 10% !important;
+     top: 45% !important;   
+}
+
+.carousel-caption h1{
+    text-shadow: 1px 1px 0px #000000;
+    font-family: "Quintessentia";
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.about-us{
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+.about{
+    text-align: justify;
+    border-radius: 2px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.about-img{
+    display: flex;
+    align-items: center;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about h2{
+    color: rgb(222, 75, 1);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: "Trirong",sans-serif;
+}
+
+.card-group{
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.item-card{
+    width: 40vw !important;
+    height: 20vh;
+    flex-direction: row;
+}
+
+.item-card .img{
+    /* width: 50%; */
+    height: 100%;
+}
+
+.item-card .img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.item-card .content{
+    /* width: 50%; */
+    padding: 10px;
+    border-radius:  105px 105px 105px 200px !important;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #131313;
+} */
+
+.container{
+  position: relative;
+}
+
+.container .card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgb(222, 75, 1);
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card-food:after{
+  content: 'spicy';
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  font-size: 6em;
+  font-weight: 600;
+  font-style: italic;
+  color:  rgba(222, 75, 1, 0.425)
+}
+
+.carousel-caption h1{
+    font-family: "Trirong";
+}
+
+.container .card-ambience:after{
+    content: 'ambience';
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    font-size: 6em;
+    font-weight: 600;
+    font-style: italic;
+    color:  rgba(222, 75, 1, 0.425)
+  }
+
+  .container .card-service:after{
+    content: 'service';
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    font-size: 6em;
+    font-weight: 600;
+    font-style: italic;
+    color:  rgba(222, 75, 1, 0.425)
+  }
+
+
+.container .card .imgBx{
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+  transition: 1s;
+}
+
+.container .card:hover .imgBx img{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .slogan{ 
+    margin-top: 30px;
+    background:url('https://img.freepik.com/premium-photo/set-burgers-with-fish-meat-vegetables-top-view-free-space-your-text-wooden-background_187166-47719.jpg?w=1380');
+    position: relative;
+    background-attachment: fixed;
+    height: 300px;
+    background-size: cover;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.448);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight:500;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 40%;
+}
+
+
+.container .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx{
+  height: 210px;
+}
+
+.container .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.container .card .contentBx .size, .container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3, .container .card .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover{
+  background:  rgb(222, 75, 1);
+}
+
+.container .card .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  background:  rgb(222, 75, 1);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2){
+  background:  rgb(222, 75, 1);
+}
+
+.container .card .contentBx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.container .card .contentBx .color span:nth-child(4){
+  background: #e91e63;
+}
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  /* transform: translateY(50px); */
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+.container .card:hover .contentBx a{
+  opacity: 1;
+  /* transform: translateY(-50px); */
+  
+  transition-delay: 0.75s;
+  
+}
+
+.card-group{
+    max-width:fit-content;
+    justify-content: space-between !important;
+    align-items: flex-start !important  ;
+    gap: 30px;
+}
+
+.imgBx img{
+    border-radius:100%;
+}
+
+footer{ 
+    margin-top: 50px;
+    background-color:rgb(222, 75, 1) ;
+    padding:10px 100px !important;
+}
+
+.contact-us{
+    width: 40%;
+}
+
+.contact-us h2{
+    font-family: "Trirong",sans-serif;
+    font-weight: 600;
+}
+
+.contact-us address{
+    font-family: "Josefin sans";
+    font-size: medium;
+    text-align: center;
+}
+
+.aboutus p,b{
+    font-family: 'Josefin sans', Courier, monospace;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social i{
+    font-size: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .collapse ul{
+        gap: 0px !important;
+    }
+
+    .carousel-item{
+        height: 30vh;
+    }
+}
